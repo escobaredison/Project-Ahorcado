@@ -1,0 +1,89 @@
+body{
+    background-image: url("https://w.wallhaven.cc/full/xl/wallhaven-xlx8ez.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.panel{
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 800px;
+}
+.titulo{
+    background-color: #696A36;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 'Nosifer', sans-serif;
+    text-shadow:0 0 10px red, 0 0 20px red, 0 0 45px red; 
+    animation:parpadear 3s infinite backwards;
+}
+@keyframes parpadear{
+    to{
+        color: brown;
+        text-shadow: none;
+        text-shadow: 0 0 5px black;
+    }
+}
+
+#palabraAdivinar{
+    height: 3em;
+}
+
+#palabraAdivinar span{
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block; /* sin esto, por ser un elemento de línea, no tomaría el width */
+}
+
+#botones{
+    background-color: #553F39;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    gap: 9px;
+    font-size: 20px;
+}
+.cajasPalabras{
+    margin-bottom: 3%;
+}
+#fruta{
+    background-color: #874E3C;
+    font-size: 30px;
+    font-family: 'Piedra', serif;
+    color: black;
+}
+/* #imagen{
+    margin-top: 3%;
+} */
+@media (max-width: 1080px) {
+    .titulo{
+        font-size: 50px;
+    }
+    #botones{
+        width: 320px;
+    }
+}
+#resultado{
+    color: #641E16;
+    font-weight:bold;
+}
